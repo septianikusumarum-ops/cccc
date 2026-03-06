@@ -38,8 +38,6 @@ Buka Undangan
 
 </section>
 
-
-
 <!-- VIDEO -->
 
 <section class="section video-section">
@@ -52,104 +50,92 @@ Buka Undangan
 
 </section>
 
-
-
 <!-- AYAT -->
 
 <section class="section ayat">
 
-<div class="card">
-
-<h3>
-بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم
-</h3>
-
-<p>
-Dan di antara tanda-tanda kebesaran-Nya
-ialah Dia menciptakan pasangan-pasangan
-untukmu agar kamu merasa tenteram kepadanya
-</p>
-
-<p>Q.S Ar-Rum 21</p>
-
-</div>
+<div class="swiper-slide slide-ayat"></div>
 
 </section>
 
+<!-- PENGANTIN -->  
+<div class="pengantin-item fade item">
 
+  <div class="foto-frame">
+    <img src="wanita.jpg" alt="Foto Pengantin Wanita">
+  </div>
 
-<!-- PENGANTIN -->
+  <h2 class="nama-pengantin">Riedho Septiani Kusumaningrum</h2>
 
-<section class="section couple">
-
-<div class="card">
-
-<h2>Riedho Septiani Kusumaningrum</h2>
-
-<p>Putri dari Bapak Andri Wiyono & Ibu Yuliasih</p>
-
-<h2>Mukhamad Rizki Arifanto</h2>
-
-<p>Putra dari Bapak Manlazim & Ibu Susi Ilmianah</p>
+  <p class="orangtua">
+    Putri dari<br>
+    Bapak Andri Wiyono<br> &<br> Ibu Yuliasih K.
+  </p>
 
 </div>
 
+<!-- Simbol & -->
+<div class="simbol-dan">&</div>
+
+<div class="pengantin-item fade item">
+
+  <div class="foto-frame">
+    <img src="pria.jpg" alt="Foto Pengantin Pria">
+  </div>
+
+  <h2 class="nama-pengantin"> Mukhamad Rizki Arifanto </h2>
+
+  <p class="orangtua">
+    Putra dari<br>
+    Bapak Manlazim <br> &<br> Ibu Susi Ilmianah
+  </p>
+
+  </div>
+
 </section>
-
-
 
 <!-- ACARA -->
 
-<section class="section acara">
+<section class="slide slide-acara">
 
-<div class="card">
+  <div class="lokasi-container">
 
-<h2>Detail Acara</h2>
+    <a 
+      href="https://maps.app.goo.gl/3gXFj5muFV2C2Cu89" target="_blank" class="btn-lokasi" >
+     📍 Buka Lokasi
+    </a>
 
-<p>Sabtu, 10 Oktober 2026</p>
-
-<p>Gedung Serbaguna Bahagia</p>
-
-<button onclick="openMap()">
-
-Klik untuk mengakses lokasi
-
-</button>
-
-</div>
+  </div>
 
 </section>
-
 
 
 <!-- RSVP -->
 
-<section class="section rsvp">
+<section class="slide slide-rsvp">
 
-<div class="card">
+<div class="rsvp-container">
 
-<h2>Reservasi Kehadiran</h2>
+<h2>Konfirmasi Kehadiran</h2>
 
-<form id="rsvpForm">
+<form id="rsvp-form">
 
-<input name="nama" placeholder="Nama Anda" required>
+<input name="nama" placeholder="Nama" required>
+
+<input name="no.hp" placeholder="No. Hp/WA" required>
 
 <select name="kehadiran">
-
-<option value="">Konfirmasi</option>
-<option>Hadir</option>
-<option>Tidak Hadir</option>
+  <option value="">Konfirmasi</option>
+  <option>Hadir</option>
+  <option>Tidak Hadir</option>
 
 </select>
 
-<textarea name="ucapan"
-placeholder="Best Wishes"></textarea>
+<input type="number" name="jumlah" placeholder="Jumlah Tamu">
 
-<button type="submit">
+<textarea name="ucapan" placeholder="Tulis Doa & Ucapan"></textarea>
 
-Kirim
-
-</button>
+<button type="submit">Kirim</button>
 
 </form>
 
@@ -158,34 +144,26 @@ Kirim
 </section>
 
 
-
 <!-- WEDDING GIFT -->
 
-<section class="section gift">
+<section class="slide slide-gift">
 
-<div class="card">
+<div class="gift-container">
+  <div class="gift-card">
+    <h3> Riedho Septiani Kusumaningrum </h3>
+    <p class="bank"> BCA </p>
+    <p id="rek1"> 8161833207 </p>
+    <button onclick="copyRek('rek1')">Salin Nomor
+    </button>
+    
+  </div>
 
-<h2>Wedding Gift</h2>
-
-<div class="rekening">
-
-<p>BCA</p>
-<p id="rek1">Riedho Septiani Kusumaningrum</p>
-
-<button onclick="copyRek('rek1')">
-Salin Nomor
-</button>
-
-</div>
-
-<div class="rekening">
-
-<p>Mandiri</p>
-<p id="rek2">Mukhamad Rizki Arifanto</p>
-
-<button onclick="copyRek('rek2')">
-Salin Nomor
-</button>
+<div class="gift-card">
+    <h3> Mukhamad Rizki Arifanto </h3>
+    <p class="bank"> BCA </p>
+    <p id="rek1"> 0112892077 </p>
+    <button onclick="copyRek('rek1')">Salin Nomor
+    </button>
 
 </div>
 
@@ -197,18 +175,20 @@ Salin Nomor
 
 <!-- CUSTOM SLIDE -->
 
-<section class="section custom">
+<section class="slide slide-thanks">
 
-<div class="card">
+<div class="thanks-content">
 
-<h2>Thanks You</h2>
+<h2> Terima Kasih </h2>
 
 <p> Terima kasih sudah menjadi bagian dari perjalanan cinta kami. 
   Kehadiran Anda menjadikan hari pernikahan kami begitu sempurna </p>
-<p> Kami Yang Berbahagia </p>
-<p> Arum & Rizki </p>
+  
+<h3> Kami Yang Berbahagia <h3>
+  
+<p> Arum & Rizki <p>
 
-</div>
+  </div>
 
 </section>
 
@@ -218,3 +198,4 @@ Salin Nomor
 </body>
 
 </html>
+
