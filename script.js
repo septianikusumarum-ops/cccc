@@ -1,95 +1,98 @@
-/* ======================================== */
-/* FADE ANIMATION ON SCROLL */
-/* ======================================== */
+/* ===================================== */
+/* BUKA UNDANGAN (SCROLL KE SLIDE 2) */
+/* ===================================== */
 
-const fadeItems = document.querySelectorAll('.fade-item');
+function bukaUndangan(){
 
-const fadeObserver = new IntersectionObserver(entries => {
+const slideBerikutnya = document.querySelector(".slide-video");
 
-entries.forEach(entry => {
+slideBerikutnya.scrollIntoView({
+behavior: "smooth"
+});
 
-```
-if(entry.isIntersecting){
-  entry.target.classList.add('show');
 }
-```
 
-});
-
-},{
-threshold:0.3
-});
-
-fadeItems.forEach(item => {
-fadeObserver.observe(item);
-});
-
-/* ======================================== */
-/* VIDEO AUTOPLAY WHEN VISIBLE */
-/* ======================================== */
+/* ===================================== */
+/* VIDEO AUTO PLAY SAAT TERLIHAT */
+/* ===================================== */
 
 const video = document.querySelector("video");
 
 if(video){
 
-const videoObserver = new IntersectionObserver(entries => {
+const videoObserver = new IntersectionObserver((entries)=>{
 
 entries.forEach(entry => {
 
-```
 if(entry.isIntersecting){
-  video.play();
+video.play();
 }else{
-  video.pause();
+video.pause();
 }
-```
 
 });
 
-},{threshold:0.5});
+},{
+threshold:0.5
+});
 
 videoObserver.observe(video);
 
 }
 
-/* ======================================== */
-/* COPY REKENING WEDDING GIFT */
-/* ======================================== */
+/* ===================================== */
+/* ANIMASI FADE SAAT SCROLL */
+/* ===================================== */
 
-function copyRekening(nomor){
+const fadeElements = document.querySelectorAll(".fade-item");
 
-navigator.clipboard.writeText(nomor);
+const fadeObserver = new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+
+});
+
+},{
+threshold:0.2
+});
+
+fadeElements.forEach(el=>{
+fadeObserver.observe(el);
+});
+
+/* ===================================== */
+/* SALIN NOMOR REKENING */
+/* ===================================== */
+
+function copyRekening(noRek){
+
+navigator.clipboard.writeText(noRek).then(()=>{
 
 alert("Nomor rekening berhasil disalin");
 
+});
+
 }
 
-/* ======================================== */
-/* AMBIL NAMA TAMU DARI LINK */
-/* contoh: website.com/?to=Andi */
-/* ======================================== */
+/* ===================================== */
+/* AMBIL NAMA TAMU DARI URL */
+/* contoh: website.com/?to=Rina */
+/* ===================================== */
 
 const urlParams = new URLSearchParams(window.location.search);
-const namaTamu = urlParams.get('to');
+
+const namaTamu = urlParams.get("to");
 
 if(namaTamu){
 
-const tamuElement = document.getElementById("nama-tamu");
+const elemenNama = document.getElementById("nama-tamu");
 
-if(tamuElement){
-tamuElement.textContent = namaTamu;
+if(elemenNama){
+elemenNama.innerText = namaTamu;
 }
-
-}
-
-/* ======================================== */
-/* ISI NAMA TAMU OTOMATIS KE FORM RSVP */
-/* ======================================== */
-
-const inputNama = document.getElementById("nama");
-
-if(inputNama && namaTamu){
-
-inputNama.value = namaTamu;
 
 }
