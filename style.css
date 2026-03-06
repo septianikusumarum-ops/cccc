@@ -91,7 +91,7 @@ background-position:center;
 .slide-pengantin{
 
 background-image:url("background-4.jpg");
-background-size:100% auto;
+background-size:cover;
 background-position:center;
 
   display:flex;
@@ -107,7 +107,7 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
-gap:40px;
+gap:30px;
 color:white;
 }
 
@@ -123,8 +123,8 @@ text-align:center;
 }
 
 .foto-frame{
-width:160px;
-height:200px;
+width:140px;
+height:180px;
 padding:8px;
 background:white;
 border-radius:15px;
@@ -133,12 +133,13 @@ box-shadow:0 10px 25px rgba(0,0,0,0.25);
 }
 
 .foto-frame img{
-width:100%;
-height:100%;
+width:80%;
+height:80%;
 object-fit:cover;
 }
 
 .nama-pengantin{
+font-family: 'Great Vibes', cursive;
 font-size:28px;
 margin-top:15px;
 }
@@ -334,6 +335,7 @@ padding:10px 25px;
 }
 
 }
+
 
 
 
