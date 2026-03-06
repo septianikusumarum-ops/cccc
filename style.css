@@ -53,7 +53,7 @@ text-align:center;
 /* ================================================= */
 
 .slide-cover{
-background-image:url(cover-bg.jpg");
+background-image:url("cover-bg.jpg");
 background-size:cover;
 background-position:center;
 color:white;
@@ -79,7 +79,7 @@ display:block;
 /* ================================================= */
 
 .slide-ayat{
-background-image:url(background-3.jpg");
+background-image:url("background-3.jpg");
 background-size:cover;
 background-position:center;
 }
@@ -91,7 +91,7 @@ background-position:center;
 .slide-pengantin{
 
 background-image:url("background-4.jpg");
-background-size:cover;
+background-size:100% auto;
 background-position:center;
 
   display:flex;
@@ -161,7 +161,7 @@ margin:10px 0;
 .slide-acara{
 
 background-image:url("background-5.jpg");
-background-size:cover;
+background-size:contain;
 background-position:center;
 
 align-items:flex-end;
@@ -192,7 +192,7 @@ transform:translateY(-3px);
 .slide-rsvp{
 
 background-image:url("background-6.jpg");
-background-size:cover;
+background-size:contain;
 background-position:center;
 
 padding:40px 20px;
@@ -238,7 +238,7 @@ border-radius:8px;
 .slide-gift{
 
 background-image:url("background-7.jpg");
-background-size:cover;
+background-size:contain;
 background-position:center;
 }
 
@@ -276,7 +276,7 @@ border-radius:8px;
 .slide-thanks{
 
 background-image:url("background-8.jpg");
-background-size:cover;
+background-size:100% auto;
 background-position:center;
 
 padding:40px 20px;
@@ -334,6 +334,7 @@ padding:10px 25px;
 }
 
 }
+
 
 
 
