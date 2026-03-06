@@ -1,5 +1,5 @@
 /* ================================================= */
-/* GLOBAL STYLE */
+/* GLOBAL */
 /* ================================================= */
 
 *{
@@ -9,50 +9,55 @@ box-sizing:border-box;
 }
 
 body{
-font-family: 'Poppins', sans-serif;
+font-family:'Poppins',sans-serif;
 overflow-x:hidden;
+background:#fff;
 }
 
 html{
 scroll-behavior:smooth;
 }
 
-/* SLIDE UMUM */
+/* ================================================= */
+/* SECTION */
+/* ================================================= */
+
 section{
 min-height:100vh;
 width:100%;
 display:flex;
 justify-content:center;
 align-items:center;
-position:relative;
 text-align:center;
+position:relative;
+padding:40px 20px;
 }
 
-.opening-slide{
-  text-align:center;
-}
+/* ================================================= */
+/* BUTTON */
+/* ================================================= */
 
 .open-btn{
-  padding:12px 30px;
-  background-color:#c8a96a;
-  color:white;
-  border:none;
-  border-radius:30px;
-  font-size:16px;
-  cursor:pointer;
-  transition:0.3s;
+padding:12px 30px;
+background:#8FAF9A;
+color:white;
+border:none;
+border-radius:30px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
 }
 
 .open-btn:hover{
-  background-color:#b89655;
+background:#7E9F8B;
+transform:translateY(-2px);
 }
-
 
 /* ================================================= */
 /* COVER */
 /* ================================================= */
 
-.slide-cover{
+.cover{
 background-image:url("cover-bg.jpg");
 background-size:cover;
 background-position:center;
@@ -60,22 +65,23 @@ color:white;
 }
 
 /* ================================================= */
-/* VIDEO SECTION */
+/* VIDEO */
 /* ================================================= */
 
 .slide-video{
 background:black;
+overflow:hidden;
 }
 
 .slide-video video{
-width:100%;
+width:100vw;
 height:100vh;
 object-fit:cover;
 display:block;
 }
 
 /* ================================================= */
-/* AYAT AL QURAN */
+/* AYAT */
 /* ================================================= */
 
 .slide-ayat{
@@ -89,25 +95,28 @@ background-position:center;
 /* ================================================= */
 
 .slide-pengantin{
-
 background-image:url("background-4.jpg");
 background-size:cover;
 background-position:center;
+flex-direction:column;
+gap:25px;
+}
 
 .nama-pengantin{
-font-family: 'Great Vibes', cursive;
-font-size:28px;
+font-family:'Great Vibes',cursive;
+font-size:30px;
 margin-top:15px;
 }
 
 .orangtua{
 font-size:16px;
 line-height:1.6;
-max-width:300px;
+max-width:320px;
+margin:auto;
 }
 
 .simbol-dan{
-font-size:16px;
+font-size:40px;
 margin:10px 0;
 }
 
@@ -116,29 +125,25 @@ margin:10px 0;
 /* ================================================= */
 
 .slide-acara{
-
 background-image:url("background-5.jpg");
 background-size:cover;
 background-position:center;
-
 align-items:flex-end;
 padding-bottom:80px;
 }
 
 .btn-lokasi{
 padding:12px 25px;
-background:#b48c5a;
+background:#8FAF9A;
 color:white;
 border-radius:30px;
 text-decoration:none;
 font-size:16px;
-margin-top: -60;
-
 transition:0.3s;
 }
 
 .btn-lokasi:hover{
-background:#9a7648;
+background:#7E9F8B;
 transform:translateY(-3px);
 }
 
@@ -147,55 +152,54 @@ transform:translateY(-3px);
 /* ================================================= */
 
 .slide-rsvp{
-
 background-image:url("background-6.jpg");
-background-size:contain;
+background-size:cover;
 background-position:center;
-
-padding:40px 20px;
 }
 
-.rsvp-form{
+#rsvp-form{
+display:flex;
+flex-direction:column;
+gap:10px;
 
-background:rgba(255,255,255,0.85);
+background:rgba(255,255,255,0.9);
 padding:25px;
 border-radius:15px;
 max-width:400px;
 width:100%;
 }
 
-.rsvp-form input,
-.rsvp-form select,
-.rsvp-form textarea{
-
-width:100%;
-padding:10px;
-margin-bottom:10px;
-
-border:1px solid #ddd;
-border-radius:8px;
-}
-
-.rsvp-form button{
-
+#rsvp-form input,
+#rsvp-form select,
+#rsvp-form textarea{
 width:100%;
 padding:12px;
-
-border:none;
-background:#b48c5a;
-color:white;
-
+border:1px solid #ddd;
 border-radius:8px;
+font-size:14px;
+}
+
+#rsvp-form button{
+width:100%;
+padding:12px;
+border:none;
+background:#8FAF9A;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+
+#rsvp-form button:hover{
+background:#7E9F8B;
 }
 
 /* ================================================= */
-/* WEDDING GIFT */
+/* GIFT */
 /* ================================================= */
 
 .slide-gift{
-
 background-image:url("background-7.jpg");
-background-size:contain;
+background-size:cover;
 background-position:center;
 }
 
@@ -203,19 +207,23 @@ background-position:center;
 display:flex;
 flex-direction:column;
 gap:20px;
+max-width:350px;
 }
 
-.rekening{
-font-size:18px;
-margin:10px 0;
+.gift-card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 8px 25px rgba(0,0,0,0.1);
 }
 
 .gift-card button{
 padding:10px 15px;
 border:none;
-background:#b48c5a;
+background:#8FAF9A;
 color:white;
 border-radius:8px;
+cursor:pointer;
 }
 
 /* ================================================= */
@@ -223,12 +231,9 @@ border-radius:8px;
 /* ================================================= */
 
 .slide-thanks{
-
 background-image:url("background-8.jpg");
-background-size:100% auto;
+background-size:cover;
 background-position:center;
-
-padding:40px 20px;
 }
 
 /* ================================================= */
@@ -246,14 +251,26 @@ opacity:1;
 transform:translateY(0);
 }
 
+/* floating soft animation */
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-10px)}
+100%{transform:translateY(0)}
+}
+
+.floating{
+animation:float 6s ease-in-out infinite;
+}
+
 /* ================================================= */
 /* RESPONSIVE */
 /* ================================================= */
 
-@media (max-width:768px){
+@media(max-width:768px){
 
 .nama-pengantin{
-font-size:22px;
+font-size:24px;
 }
 
 .orangtua{
@@ -270,17 +287,3 @@ padding:10px 25px;
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
