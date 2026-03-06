@@ -102,25 +102,6 @@ text-align:center;
 padding:40px 20px;
 }
 
-.pengantin-wrapper{
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-gap:30px;
-color:white;
-}
-
-.pengantin-item{
-
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-
-text-align:center;
-
-}
 .nama-pengantin{
 font-family: 'Great Vibes', cursive;
 font-size:28px;
@@ -310,6 +291,7 @@ padding:10px 25px;
 }
 
 }
+
 
 
 
