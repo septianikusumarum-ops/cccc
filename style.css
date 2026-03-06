@@ -121,23 +121,6 @@ justify-content:center;
 text-align:center;
 
 }
-
-.foto-frame{
-width:140px;
-height:180px;
-padding:8px;
-background:white;
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 10px 25px rgba(0,0,0,0.25);
-}
-
-.foto-frame img{
-width:80%;
-height:80%;
-object-fit:cover;
-}
-
 .nama-pengantin{
 font-family: 'Great Vibes', cursive;
 font-size:28px;
@@ -151,7 +134,7 @@ max-width:300px;
 }
 
 .simbol-dan{
-font-size:40px;
+font-size:16px;
 margin:10px 0;
 }
 
@@ -162,7 +145,7 @@ margin:10px 0;
 .slide-acara{
 
 background-image:url("background-5.jpg");
-background-size:contain;
+background-size:cover;
 background-position:center;
 
 align-items:flex-end;
@@ -170,13 +153,13 @@ padding-bottom:80px;
 }
 
 .btn-lokasi{
-
 padding:12px 25px;
 background:#b48c5a;
 color:white;
 border-radius:30px;
 text-decoration:none;
 font-size:16px;
+margin-top: -40;
 
 transition:0.3s;
 }
@@ -247,14 +230,6 @@ background-position:center;
 display:flex;
 flex-direction:column;
 gap:20px;
-}
-
-.gift-card{
-
-background:rgba(255,255,255,0.85);
-padding:20px;
-
-border-radius:15px;
 }
 
 .rekening{
@@ -335,6 +310,7 @@ padding:10px 25px;
 }
 
 }
+
 
 
 
