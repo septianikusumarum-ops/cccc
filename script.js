@@ -10,6 +10,12 @@ slideBerikutnya.scrollIntoView({
 behavior: "smooth"
 });
 
+const musik = document.getElementById("musik");
+
+if(musik){
+musik.play();
+}
+  
 }
 
 /* ===================================== */
@@ -96,3 +102,4 @@ elemenNama.innerText = namaTamu;
 }
 
 }
+
