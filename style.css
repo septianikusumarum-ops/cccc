@@ -1,155 +1,267 @@
+/* ================================================= */
+/* GLOBAL STYLE */
+/* ================================================= */
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Poppins', sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    background:#f9f7f4;
-    color:#333;
-    overflow-x:hidden;
+font-family: 'Poppins', sans-serif;
+overflow-x:hidden;
 }
 
-/* COVER */
-.cover{
-    height:100vh;
-    background:url('cover-bg.jpg') center/cover no-repeat;
-    display:flex;
-    justify-content:lower;
-    align-items:lower;
-    text-align:lower;
-    color:black;
+html{
+scroll-behavior:smooth;
 }
 
-.cover-content{
-    background:rgba(0,0,0,0.45);
-    padding:40px;
-    border-radius:10px;
-}
-
-.cover h1{
-    font-size:40px;
-    margin:10px 0;
-}
-
-.cover h2{
-    font-size:28px;
-    margin-bottom:10px;
-}
-
-.cover button{
-    padding:12px 25px;
-    background:#c8a97e;
-    border:none;
-    color:white;
-    font-size:16px;
-    cursor:pointer;
-    border-radius:5px;
-}
-
-/* SECTION */
-.section{
-    padding:80px 20px;
-    text-align:center;
-}
-
-.section h2{
-    font-size:32px;
-    margin-bottom:20px;
-}
-
-/* SLIDER */
-.slider{
-    position:relative;
-}
+/* SLIDE UMUM */
 
 .slide{
-    display:none;
+min-height:100vh;
+width:100%;
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
 }
 
-.slide.active{
-    display:block;
+/* ================================================= */
+/* COVER */
+/* ================================================= */
+
+.slide-cover{
+background-image:url("images/cover-bg.jpg");
+background-size:cover;
+background-position:center;
+color:white;
 }
 
-/* RSVP FORM */
+/* ================================================= */
+/* VIDEO SECTION */
+/* ================================================= */
 
-form{
-    max-width:400px;
-    margin:auto;
+.slide-video{
+background:black;
 }
 
-form input, form select{
-    width:100%;
-    padding:10px;
-    margin:10px 0;
-    border:1px solid #ccc;
-    border-radius:5px;
+.slide-video video{
+width:100%;
+height:100vh;
+object-fit:cover;
 }
 
-form button{
-    padding:12px;
-    width:100%;
-    border:none;
-    background:#c8a97e;
-    color:white;
-    font-size:16px;
-    border-radius:5px;
-    cursor:pointer;
+/* ================================================= */
+/* AYAT AL QURAN */
+/* ================================================= */
+
+.slide-ayat{
+background-image:url("images/background-3.jpg");
+background-size:cover;
+background-position:center;
 }
 
+/* ================================================= */
+/* PENGANTIN */
+/* ================================================= */
+
+.slide-pengantin{
+
+background-image:url("images/background-4.jpg");
+background-size:cover;
+background-position:center;
+
+padding:40px 20px;
+}
+
+.pengantin-wrapper{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:40px;
+color:white;
+}
+
+.foto-frame{
+width:160px;
+height:200px;
+padding:8px;
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+.foto-frame img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.nama-pengantin{
+font-size:28px;
+margin-top:15px;
+}
+
+.orangtua{
+font-size:16px;
+line-height:1.6;
+}
+
+.simbol-dan{
+font-size:40px;
+}
+
+/* ================================================= */
+/* ACARA */
+/* ================================================= */
+
+.slide-acara{
+
+background-image:url("images/background-5.jpg");
+background-size:cover;
+background-position:center;
+
+align-items:flex-end;
+padding-bottom:80px;
+}
+
+.btn-lokasi{
+
+padding:12px 25px;
+background:#b48c5a;
+color:white;
+border-radius:30px;
+text-decoration:none;
+font-size:16px;
+
+transition:0.3s;
+}
+
+.btn-lokasi:hover{
+background:#9a7648;
+transform:translateY(-3px);
+}
+
+/* ================================================= */
+/* RSVP */
+/* ================================================= */
+
+.slide-rsvp{
+
+background-image:url("images/background-6.jpg");
+background-size:cover;
+background-position:center;
+
+padding:40px 20px;
+}
+
+.rsvp-form{
+
+background:rgba(255,255,255,0.85);
+padding:25px;
+border-radius:15px;
+max-width:400px;
+width:100%;
+}
+
+.rsvp-form input,
+.rsvp-form select,
+.rsvp-form textarea{
+
+width:100%;
+padding:10px;
+margin-bottom:10px;
+
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+.rsvp-form button{
+
+width:100%;
+padding:12px;
+
+border:none;
+background:#b48c5a;
+color:white;
+
+border-radius:8px;
+}
+
+/* ================================================= */
 /* WEDDING GIFT */
+/* ================================================= */
 
-.gift-box{
-    max-width:400px;
-    margin:auto;
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+.slide-gift{
+
+background-image:url("images/background-7.jpg");
+background-size:cover;
+background-position:center;
 }
 
-.gift-box p{
-    margin:10px 0;
+.gift-container{
+display:flex;
+flex-direction:column;
+gap:20px;
 }
 
-.copy-btn{
-    margin-top:10px;
-    padding:8px 15px;
-    background:#c8a97e;
-    border:none;
-    color:white;
-    border-radius:5px;
-    cursor:pointer;
+.gift-card{
+
+background:rgba(255,255,255,0.85);
+padding:20px;
+
+border-radius:15px;
 }
 
-/* WHATSAPP BUTTON */
-
-.wa-button{
-    display:inline-block;
-    margin-top:10px;
-    padding:10px 20px;
-    background:#25D366;
-    color:white;
-    border-radius:5px;
-    text-decoration:none;
+.rekening{
+font-size:18px;
+margin:10px 0;
 }
 
-/* RESPONSIVE */
-
-@media(max-width:768px){
-
-.cover h1{
-    font-size:30px;
+.gift-card button{
+padding:10px 15px;
+border:none;
+background:#b48c5a;
+color:white;
+border-radius:8px;
 }
 
-.cover h2{
-    font-size:22px;
+/* ================================================= */
+/* THANK YOU */
+/* ================================================= */
+
+.slide-thanks{
+
+background-image:url("images/background-8.jpg");
+background-size:cover;
+background-position:center;
+
+padding:40px 20px;
 }
 
-.section{
-    padding:60px 15px;
+.thanks-content{
+
+background:rgba(255,255,255,0.8);
+padding:30px;
+border-radius:20px;
+max-width:500px;
 }
 
+/* ================================================= */
+/* ANIMATION */
+/* ================================================= */
 
+.fade-item{
+opacity:0;
+transform:translateY(40px);
+transition:all 1s ease;
+}
+
+.fade-item.show{
+opacity:1;
+transform:translateY(0);
 }
