@@ -1,37 +1,47 @@
 /* ===================================== */
-/* BUKA UNDANGAN (SCROLL KE SLIDE 2) */
+/* BUKA UNDANGAN */
 /* ===================================== */
 
 function bukaUndangan(){
 
-const slideBerikutnya = document.querySelector(".slide-video");
+const videoSlide = document.querySelector(".slide-video");
 
-slideBerikutnya.scrollIntoView({
-behavior: "smooth"
+videoSlide.scrollIntoView({
+behavior:"smooth"
 });
+
+/* play music */
 
 const musik = document.getElementById("musik");
 
 if(musik){
-musik.play();
+musik.play().catch(()=>{});
 }
-  
+
+/* play video */
+
+const video = document.getElementById("weddingVideo");
+
+if(video){
+video.play().catch(()=>{});
+}
+
 }
 
 /* ===================================== */
-/* VIDEO AUTO PLAY SAAT TERLIHAT */
+/* VIDEO PLAY / PAUSE SAAT TERLIHAT */
 /* ===================================== */
 
-const video = document.querySelector("video");
+const video = document.getElementById("weddingVideo");
 
 if(video){
 
-const videoObserver = new IntersectionObserver((entries)=>{
+const observer = new IntersectionObserver((entries)=>{
 
-entries.forEach(entry => {
+entries.forEach(entry=>{
 
 if(entry.isIntersecting){
-video.play();
+video.play().catch(()=>{});
 }else{
 video.pause();
 }
@@ -39,18 +49,18 @@ video.pause();
 });
 
 },{
-threshold:0.5
+threshold:0.6
 });
 
-videoObserver.observe(video);
+observer.observe(video);
 
 }
 
 /* ===================================== */
-/* ANIMASI FADE SAAT SCROLL */
+/* ANIMASI SCROLL FADE */
 /* ===================================== */
 
-const fadeElements = document.querySelectorAll(".fade-item");
+const fadeItems = document.querySelectorAll(".fade-item");
 
 const fadeObserver = new IntersectionObserver((entries)=>{
 
@@ -66,17 +76,19 @@ entry.target.classList.add("show");
 threshold:0.2
 });
 
-fadeElements.forEach(el=>{
+fadeItems.forEach(el=>{
 fadeObserver.observe(el);
 });
 
 /* ===================================== */
-/* SALIN NOMOR REKENING */
+/* COPY NOMOR REKENING */
 /* ===================================== */
 
-function copyRekening(noRek){
+function copyRek(id){
 
-navigator.clipboard.writeText(noRek).then(()=>{
+const teks = document.getElementById(id).innerText;
+
+navigator.clipboard.writeText(teks).then(()=>{
 
 alert("Nomor rekening berhasil disalin");
 
@@ -89,17 +101,16 @@ alert("Nomor rekening berhasil disalin");
 /* contoh: website.com/?to=Rina */
 /* ===================================== */
 
-const urlParams = new URLSearchParams(window.location.search);
+const params = new URLSearchParams(window.location.search);
 
-const namaTamu = urlParams.get("to");
+const nama = params.get("to");
 
-if(namaTamu){
+if(nama){
 
-const elemenNama = document.getElementById("nama-tamu");
+const target = document.getElementById("guestName");
 
-if(elemenNama){
-elemenNama.innerText = namaTamu;
+if(target){
+target.innerText = nama;
 }
 
 }
-
