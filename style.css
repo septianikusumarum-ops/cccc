@@ -239,14 +239,6 @@ background-position:center;
 padding:40px 20px;
 }
 
-.thanks-content{
-
-background:rgba(255,255,255,0.8);
-padding:30px;
-border-radius:20px;
-max-width:500px;
-}
-
 /* ================================================= */
 /* ANIMATION */
 /* ================================================= */
@@ -276,11 +268,6 @@ font-size:22px;
 font-size:14px;
 }
 
-.foto-frame{
-width:130px;
-height:170px;
-}
-
 .simbol-dan{
 font-size:30px;
 }
@@ -291,6 +278,7 @@ padding:10px 25px;
 }
 
 }
+
 
 
 
