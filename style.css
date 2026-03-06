@@ -16,10 +16,10 @@ body{
     height:100vh;
     background:url('cover-bg.jpg') center/cover no-repeat;
     display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:white;
+    justify-content:lower;
+    align-items:lower;
+    text-align:lower;
+    color:black;
 }
 
 .cover-content{
@@ -150,5 +150,6 @@ form button{
 .section{
     padding:60px 15px;
 }
+
 
 }
