@@ -94,14 +94,6 @@ background-image:url("background-4.jpg");
 background-size:cover;
 background-position:center;
 
-  display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-  
-padding:40px 20px;
-}
-
 .nama-pengantin{
 font-family: 'Great Vibes', cursive;
 font-size:28px;
@@ -278,6 +270,7 @@ padding:10px 25px;
 }
 
 }
+
 
 
 
