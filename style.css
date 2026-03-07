@@ -30,6 +30,7 @@ justify-content:center;
 align-items:center;
 text-align:center;
 position:relative;
+padding:40px 20px
 }
 
 /* ================================================= */
@@ -82,7 +83,7 @@ background:black;
 }
 
 .slide-video video{
-width:100vw;
+width:100%;
 height:100vh;
 object-fit:cover;
 display:block;
@@ -147,8 +148,8 @@ margin-bottom:10px;
 
 .foto-frame{
 
-width:100px;
-height:100px;
+width:140px;
+height:140px;
 border-radius:50%;
 margin:0 auto 15px auto;
 overflow:hidden;
@@ -171,7 +172,7 @@ object-fit:cover;
 
 .nama-pengantin{
 
-font-family: 'Great Vibes', cursive;
+font-family: 'Above The Beyond Script', cursive;
 font-size:32px;
 
 color:#2f3e34;
@@ -184,6 +185,7 @@ margin-bottom:8px;
 
 .orangtua{
 
+font-family: 'Glacial Indifferent', cursive;
 font-size:15px;
 line-height:1.6;
 
@@ -197,13 +199,13 @@ max-width:280px;
 
 .simbol-dan{
 
-font-family: 'Great Vibes', cursive;
+font-family: 'Above The Beyond Script', cursive;
 
-font-size:50px;
+font-size:25px;
 
 color:#000000;
 
-margin:5px 0;
+margin:0 0;
 
 }
 
@@ -246,7 +248,7 @@ border-radius:30px;
 text-decoration:none;
 font-size:16px;
 transition:0.3s;
-margin-top:-40px
+margin-top:-60px
 }
 
 .btn-lokasi:hover{
@@ -427,6 +429,7 @@ transition-delay:0.6s;
 .delay-4{
 transition-delay:0.8s;
 }
+
 
 
 
