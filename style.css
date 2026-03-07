@@ -122,7 +122,7 @@ display:flex;
 flex-direction:column;
 align-items:center;
 
-gap:35px;
+gap:25px;
 
 max-width:500px;
 
@@ -135,7 +135,7 @@ max-width:500px;
 display:flex;
 flex-direction:column;
 align-items:center;
-margin-bottom:40px;
+margin-bottom:10px;
 
 }
 
@@ -143,8 +143,8 @@ margin-bottom:40px;
 
 .foto-frame{
 
-width:140px;
-height:140px;
+width:160px;
+height:160px;
 border-radius:50%;
 margin:0 auto 15px auto;
 overflow:hidden;
@@ -197,7 +197,7 @@ font-family: 'Great Vibes', cursive;
 
 font-size:50px;
 
-color:#8FAF9A;
+color:#000000;
 
 margin:10px 0;
 
@@ -389,6 +389,7 @@ padding:10px 25px;
 }
 
 }
+
 
 
 
