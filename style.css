@@ -115,115 +115,99 @@ align-items:flex-start;
 
 padding-top:40px;
 
+}
+/* ===== CARD UTAMA DALAM FRAME ===== */
+.card-pengantin{
+
+max-width:320px;
+margin:0 auto;
+
 text-align:center;
 
-}
+padding:30px 25px;
 
-/* container utama */
-
-.pengantin-container{
-
-display:flex;
-flex-direction:column;
-align-items:center;
-
-gap:25px;
-
-max-width:500px;
+box-sizing:border-box;
 
 }
 
-/* item pengantin */
-
-.pengantin-item{
-
-display:flex;
-flex-direction:column;
-align-items:center;
-margin-bottom:15px;
-
-}
-
-/* frame foto */
-
+/* ===== FRAME FOTO OVAL ===== */
 .foto-frame{
 
-width:140px;
-height:180px;
-border-radius:80%;
-margin:0 auto 15px auto;
+width:150px;
+height:200px;
+
+border-radius:80px;
+
 overflow:hidden;
+
+margin:0 auto 15px auto;
+
 border:4px solid black;
-box-shadow:0 4px 10px rgba(0,0,0,0.0);
 
 }
 
-/* foto */
-
+/* ===== FOTO DI DALAM FRAME ===== */
 .foto-frame img{
 
 width:100%;
 height:100%;
+
 object-fit:cover;
 
 }
 
-/* nama pengantin */
-
+/* ===== NAMA PENGANTIN ===== */
 .nama-pengantin{
 
-font-family: 'Above The Beyond Script', cursive;
-font-size:32px;
+font-family:'Great Vibes', cursive;
+
+font-size:30px;
+
+margin-top:15px;
+margin-bottom:8px;
+
+line-height:1.3;
 
 color:#2f3e34;
-margin-top:5px;
-margin-bottom:5px;
 
 }
 
-/* orang tua */
+/* ===== TEKS PUTRA / PUTRI ===== */
+.keterangan{
 
+font-size:14px;
+
+margin-bottom:5px;
+
+color:#555;
+
+}
+
+/* ===== TEKS ORANG TUA ===== */
 .orangtua{
 
-font-family: 'Poppins', cursive;
 font-size:15px;
+
 line-height:1.6;
+
+max-width:260px;
+
+margin:0 auto;
 
 color:#444;
 
-max-width:280px;
-
 }
 
-/* simbol & */
-
+/* ===== SIMBOL & ===== */
 .simbol-dan{
 
-font-family: 'Great Vibes', cursive;
+font-family:'Great Vibes', cursive;
 
 font-size:20px;
 
-color:black;
+margin:25px 0;
 
-margin:0 0;
-
-}
-
-/* animasi */
-
-.fade-item{
-
-opacity:0;
-transform:translateY(40px);
-
-transition:all 1s ease;
-
-}
-
-.fade-item.show{
-
-opacity:1;
-transform:translateY(0);
+color:#2f3e34;
 
 }
 
@@ -501,6 +485,7 @@ transition-delay:0.6s;
 .delay-4{
 transition-delay:0.8s;
 }
+
 
 
 
