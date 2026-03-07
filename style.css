@@ -61,8 +61,12 @@ transform:translateY(-2px);
 background-image:url("cover-bg.jpg");
 background-size:cover;
 background-position:center;
-color:white;
+color:black;
 }
+
+.card{
+margin-top:120px;
+  }
 
 /* ================================================= */
 /* VIDEO */
@@ -287,3 +291,4 @@ padding:10px 25px;
 }
 
 }
+
