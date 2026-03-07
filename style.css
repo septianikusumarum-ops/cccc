@@ -99,30 +99,131 @@ background-position:center;
 /* ================================================= */
 
 .slide-pengantin{
+
 background-image:url("background-4.jpg");
 background-size:cover;
 background-position:center;
-flex-direction:column;
-gap:25px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:60px 20px;
+
+text-align:center;
+
 }
+
+/* container utama */
+
+.pengantin-container{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+
+gap:35px;
+
+max-width:500px;
+
+}
+
+/* item pengantin */
+
+.pengantin-item{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+
+}
+
+/* frame foto */
+
+.foto-frame{
+
+width:40px;
+height:40px;
+border-radius:50%;
+overflow:hidden;
+
+border:5px solid rgba(255,255,255,0.8);
+
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+margin-bottom:15px;
+
+}
+
+/* foto */
+
+.foto-frame img{
+
+width:30%;
+height:30%;
+
+object-fit:cover;
+
+}
+
+/* nama pengantin */
 
 .nama-pengantin{
-font-family:'Great Vibes',cursive;
-font-size:30px;
-margin-top:15px;
+
+font-family: 'Great Vibes', cursive;
+font-size:32px;
+
+color:#2f3e34;
+
+margin-bottom:8px;
+
 }
+
+/* orang tua */
 
 .orangtua{
-font-size:16px;
+
+font-size:15px;
 line-height:1.6;
-max-width:320px;
-margin:auto;
+
+color:#444;
+
+max-width:280px;
+
 }
 
+/* simbol & */
+
 .simbol-dan{
-font-size:40px;
+
+font-family: 'Great Vibes', cursive;
+
+font-size:50px;
+
+color:#8FAF9A;
+
 margin:10px 0;
+
 }
+
+/* animasi */
+
+.fade-item{
+
+opacity:0;
+transform:translateY(40px);
+
+transition:all 1s ease;
+
+}
+
+.fade-item.show{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
 
 /* ================================================= */
 /* ACARA */
@@ -291,5 +392,6 @@ padding:10px 25px;
 }
 
 }
+
 
 
