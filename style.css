@@ -46,6 +46,7 @@ border-radius:30px;
 font-size:16px;
 cursor:pointer;
 transition:0.3s;
+margin-top:60px
 }
 
 .open-btn:hover{
@@ -143,8 +144,8 @@ margin-bottom:10px;
 
 .foto-frame{
 
-width:160px;
-height:160px;
+width:100px;
+height:100px;
 border-radius:50%;
 margin:0 auto 15px auto;
 overflow:hidden;
@@ -242,7 +243,7 @@ border-radius:30px;
 text-decoration:none;
 font-size:16px;
 transition:0.3s;
-margin-top:40px
+margin-top:-40px
 }
 
 .btn-lokasi:hover{
@@ -314,7 +315,7 @@ max-width:350px;
 }
 
 .gift-card{
-background:white;
+background:rgba(255,255,255,0.9);
 padding:20px;
 border-radius:12px;
 box-shadow:0 8px 25px rgba(0,0,0,0.1);
@@ -346,7 +347,7 @@ background-position:center;
 .fade-item{
 opacity:0;
 transform:translateY(40px);
-transition:all 1s ease;
+transition:all 2s ease;
 }
 
 .fade-item.show{
@@ -423,6 +424,7 @@ transition-delay:0.6s;
 .delay-4{
 transition-delay:0.8s;
 }
+
 
 
 
