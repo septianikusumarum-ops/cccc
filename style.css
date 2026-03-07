@@ -9,7 +9,7 @@ box-sizing:border-box;
 }
 
 body{
-font-family:'Poppins',sans-serif;
+font-family:'Libre Baskerville',sans-serif;
 overflow-x:hidden;
 background:#fff;
 }
@@ -111,9 +111,9 @@ background-position:center;
 
 display:flex;
 justify-content:center;
-align-items:center;
+align-items:flex-start;
 
-padding:60px 20px;
+padding-top:40px;
 
 text-align:center;
 
@@ -148,9 +148,9 @@ margin-bottom:10px;
 
 .foto-frame{
 
-width:140px;
-height:140px;
-border-radius:50%;
+width:150px;
+height:200px;
+border-radius:80%;
 margin:0 auto 15px auto;
 overflow:hidden;
 border:4px solid black;
@@ -176,8 +176,8 @@ font-family: 'Above The Beyond Script', cursive;
 font-size:32px;
 
 color:#2f3e34;
-
-margin-bottom:8px;
+margin-top:5px;
+margin-bottom:5px;
 
 }
 
@@ -185,7 +185,7 @@ margin-bottom:8px;
 
 .orangtua{
 
-font-family: 'Glacial Indifferent', cursive;
+font-family: 'Libre Baskerville', cursive;
 font-size:15px;
 line-height:1.6;
 
@@ -199,7 +199,7 @@ max-width:280px;
 
 .simbol-dan{
 
-font-family: 'Above The Beyond Script', cursive;
+font-family: 'Great Vibes', cursive;
 
 font-size:25px;
 
@@ -236,8 +236,9 @@ transform:translateY(0);
 background-image:url("background-5.jpg");
 background-size:cover;
 background-position:center;
-align-items:flex-end;
-padding-bottom:80px;
+
+display:flex;
+padding-top:120px;
 }
 
 .btn-lokasi{
@@ -248,13 +249,17 @@ border-radius:30px;
 text-decoration:none;
 font-size:16px;
 transition:0.3s;
-margin-top:-60px
 }
 
 .btn-lokasi:hover{
 background:#7E9F8B;
 transform:translateY(-3px);
 }
+
+.lokasi-container{
+margin-top:20px;
+}
+
 
 /* ================================================= */
 /* RSVP */
@@ -267,6 +272,8 @@ background-position:center;
 }
 
 #rsvp-form{
+max-width:400px;
+margin:auto;
 display:flex;
 flex-direction:column;
 gap:10px;
@@ -301,6 +308,39 @@ cursor:pointer;
 #rsvp-form button:hover{
 background:#7E9F8B;
 }
+
+.ucapan-container{
+
+max-width:400px;
+margin:40px auto;
+text-align:left;
+
+}
+
+.ucapan-item{
+
+background:#8FAF9A;
+padding:12px;
+border-radius:8px;
+margin-bottom:15px;
+
+}
+
+.ucapan-item b{
+
+font-size:13px;
+color:black;
+
+}
+
+.ucapan-item p{
+
+margin-top:5px;
+font-size:13px;
+color:black;
+
+}
+
 
 /* ================================================= */
 /* GIFT */
@@ -343,6 +383,40 @@ cursor:pointer;
 background-image:url("background-8.jpg");
 background-size:cover;
 background-position:center;
+}
+
+.penutup{
+
+text-align:center;
+padding-top:80px;
+padding-bottom:60px;
+
+max-width:500px;
+margin:auto;
+
+line-height:1.8;
+
+}
+
+.penutup h2{
+
+font-size:32px;
+margin-bottom:20px;
+
+}
+
+.penutup p{
+
+margin-bottom:15px;
+font-size:14px;
+
+}
+
+.penutup h3{
+
+margin-top:25px;
+font-size:22px;
+
 }
 
 /* ================================================= */
@@ -429,6 +503,7 @@ transition-delay:0.6s;
 .delay-4{
 transition-delay:0.8s;
 }
+
 
 
 
